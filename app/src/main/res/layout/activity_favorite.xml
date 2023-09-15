@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CRUD.Favorite">
+
+    <LinearLayout
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btn_back_tambah"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/soft_orange"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resep yang kamu sukai"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/primary_orange"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            tools:listitem="@layout/list_item"
+            android:layout_marginTop="35dp"/>
+    </RelativeLayout>
+
+</FrameLayout>

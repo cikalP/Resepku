@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_orange">#F78330</color>
+    <color name="soft_orange">#F7A66D</color>
+    <color name="abu_abu">#F3F3F3</color>
+    <color name="abu_edit_text">#D8D8D8</color>
+</resources>

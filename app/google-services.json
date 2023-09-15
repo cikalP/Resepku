@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "905880457711",
+    "firebase_url": "https://resepku-8170e-default-rtdb.firebaseio.com",
+    "project_id": "resepku-8170e",
+    "storage_bucket": "resepku-8170e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905880457711:android:43dd494533eaa29a6a661a",
+        "android_client_info": {
+          "package_name": "com.example.resepku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-xVKJUsKNy1m96Awnz6vsVx7Ivflov5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

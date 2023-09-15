@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CRUD.TambahResep">
+
+    <LinearLayout
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btn_back_tambah"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah resep"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/soft_orange"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_marginTop="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ambil Gambar Resep" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/cv_btn_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="insertImg"
+                    android:src="@drawable/img_gambar" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Resep Makanan/Minuman/Roti"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/et_judul_resep"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edit_text"
+                    android:hint="Masukan judul resep"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bahan-Bahan"/>
+
+                <EditText
+                    android:id="@+id/et_bahan_bahan"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edit_text"
+                    android:hint="Masukan bahan-bahan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Langkah-Langkah"/>
+
+                <EditText
+                    android:id="@+id/et_langkah"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edit_text"
+                    android:hint="Masukan langkah-langkah"/>
+
+                <Button
+                    android:id="@+id/btn_tambah_resep"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:onClick="insertData"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="150dp"
+                    android:text="Simpan"
+                    android:backgroundTint="@color/primary_orange"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.profile">
+
+    <LinearLayout
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_back_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/soft_orange"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/lingkaran"
+        android:layout_gravity="center"
+        android:layout_marginBottom="190dp"/>
+
+    <ImageView
+        android:id="@+id/btn_ambilgambar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/img_7"
+        android:layout_gravity="center"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="50dp"/>
+
+
+    <EditText
+        android:layout_width="339dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        android:background="@drawable/rounded_bg"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawableRight="@drawable/ic_edit"
+        android:hint="Nama"
+        android:textColorHint="@color/primary_orange"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="339dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:elevation="20dp"
+        android:background="@drawable/rounded_bg"
+        android:drawableLeft="@drawable/ic_info"
+        android:drawableRight="@drawable/ic_edit"
+        android:hint="Tentang"
+        android:textColorHint="@color/primary_orange"
+        android:drawablePadding="20dp"/>
+
+    <Button
+        android:id="@+id/btn_tambah_resep"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="15dp"
+        android:text="Simpan"
+        android:backgroundTint="@color/primary_orange"/>
+
+</FrameLayout>
